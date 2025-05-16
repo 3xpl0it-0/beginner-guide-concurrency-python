@@ -270,7 +270,9 @@ Sleep Done
 Multiple Process' Section Finished
 
 # final words
-if you've made it this far i really appreciate it. to reiterate from earlier, i've probably gotten something wrong and would love to be told where, please do if you notice.   
+if you've made it this far i really appreciate it. to reiterate from earlier, i've probably gotten something wrong and would love to be told where, please do if you notice.
+
+
 would also appreciate any different interaction (saying interaction because there's definitely no such thing as likes on this platform and i lack a better word), even if being told on other social media platforms. i'd like to know that someone got help from this. given how much some of you have helped me, it's a small repayment on my societable debt.
 
 see ya,  
