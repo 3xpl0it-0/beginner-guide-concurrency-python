@@ -118,7 +118,7 @@ async def main():
 asyncio.run(main())
 ```
 
-first off, notice you have to run an async function, you can't just do a bunch of function calls to an async function with different arguements each time.
+first off, notice you have to run an async function, that's because you can't use await outside of an async function.
 ```asyncio.gather(*efl)``` is used to group together the different cases of the function with different arguements each time and allow them to be ran concurrently, the ```*``` is used to unpack the ```efl``` list. you could await each function individually but they wouldn't be ran concurrently then.
 
 ## output
