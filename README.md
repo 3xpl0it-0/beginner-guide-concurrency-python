@@ -31,11 +31,11 @@ example_function("example_arg")
 nothing to say here really, as simple as it gets.
 
 # output
-Single Synchronous Section Starting
-example_arg
-74036.9174051
-Sleep Done
-74038.9184008
+Single Synchronous Section Starting  
+example_arg  
+74036.9174051  
+Sleep Done  
+74038.9184008  
 Single Synchronous Section Finished
 
 # multiple functions called:
@@ -45,26 +45,26 @@ arg_list = ['example_arg1', 'example_arg2', 'example_arg3', 'example_arg4']
 for i in arg_list:
     example_function(i)
 ```
-this is going to call the function with the next arguement in the list each time. the next function won't be called untill the previous one is done.
+this is going to call the function with the next argument in the list each time. the next function won't be called untill the previous one is done.
 
 # output
-Multiple Synchronous Section Starting
-example_arg1
-74038.9197888
-Sleep Done
-74040.9210788
-example_arg2
-74040.9218514
-Sleep Done
-74042.9230254
-example_arg3
-74042.9239629
-Sleep Done
-74044.9251634
-example_arg4
-74044.9260313
-Sleep Done
-74046.9271687
+Multiple Synchronous Section Starting  
+example_arg1  
+74038.9197888  
+Sleep Done  
+74040.9210788  
+example_arg2  
+74040.9218514  
+Sleep Done  
+74042.9230254  
+example_arg3  
+74042.9239629  
+Sleep Done  
+74044.9251634  
+example_arg4  
+74044.9260313  
+Sleep Done  
+74046.9271687  
 Multiple Synchronous Section Finished
 
 # asynchronous
@@ -93,11 +93,11 @@ asyncio.run(example_function("example_arg"))
 againn not much to say yet, just remember the syntax is different when dealing with an asynchronous function call.
 
 # output
-Single Asynchronous Section Starting
-example_arg
-74841.8003434
-Sleep Done
-74843.8069306
+Single Asynchronous Section Starting  
+example_arg  
+74841.8003434  
+Sleep Done  
+74843.8069306  
 Single Asynchronous Section Finished
 
 # multiple functions called:
@@ -119,30 +119,29 @@ first off, notice you have to run an async function, you can't just do a bunch o
 ```asyncio.gather(*efl)``` is used to group together the different cases of the function with different arguements each time and allow them to be ran concurrently, the ```*``` is used to unpack the ```efl``` list. you could await each function individually but they wouldn't be ran concurrently then.
 
 # output
-Multiple Asynchronous Section Starting
-example_arg1
-77622.8096829
-example_arg2
-77622.8100636
-example_arg3
-77622.8105148
-example_arg4
-77622.8108582
-Sleep Done
-77624.8247595
-Sleep Done
-77624.8255865
-Sleep Done
-77624.8263685
-Sleep Done
-77624.8271209
+Multiple Asynchronous Section Starting  
+example_arg1  
+77622.8096829  
+example_arg2  
+77622.8100636  
+example_arg3  
+77622.8105148  
+example_arg4  
+77622.8108582  
+Sleep Done  
+77624.8247595  
+Sleep Done  
+77624.8255865  
+Sleep Done  
+77624.8263685  
+Sleep Done  
+77624.8271209  
 Multiple Asynchronous Section Finished
 
 notice from the time that when the sleep line gets hit the next function starts and everything is in order because unless paused, the running coroutine doesn't give way to something else untill it's done.
 
 ## threading
 a thread is a unique flow of execution, they're useful because if one thread is waiting for something another one can run. priority depends on operating system scheduler.
-
 
 # single function call:
 ```
@@ -156,11 +155,11 @@ example_single_thread.join()
 syntax is obvious and the comma after ```'example_arg'``` isn't there by accident. ```start()``` creates the new thread and returns to main thread. join() stops the main thread from continuing untill the thread ```join()``` was called on is done.
 
 # output
-Single Thread Section Starting
-example_arg
-79583.1923672
-Sleep Done
-79585.1930145
+Single Thread Section Starting  
+example_arg  
+79583.1923672  
+Sleep Done  
+79585.1930145  
 Single Thread Section Finished
 
 # multiple functions called:
@@ -180,23 +179,23 @@ for i in emt:
 ```
 
 # output
-Multiple Threads Section Starting
-example_arg1
-79585.1943297
-example_arg2
-79585.1946822
-example_arg3
-79585.1951081
-example_arg4
-79585.1954027
-Sleep Done
-79587.1952059
-Sleep Done
-Sleep Done
-79587.1955066
-79587.1954338
-Sleep Done
-79587.1961021
+Multiple Threads Section Starting  
+example_arg1  
+79585.1943297  
+example_arg2  
+79585.1946822  
+example_arg3  
+79585.1951081  
+example_arg4  
+79585.1954027  
+Sleep Done  
+79587.1952059  
+Sleep Done  
+Sleep Done  
+79587.1955066  
+79587.1954338  
+Sleep Done  
+79587.1961021  
 Multiple Threads Section Finished
 
 notice the jumbled order, this is down to close timing in wake up times and how the operating system choses which thread goes next
@@ -220,11 +219,11 @@ if __name__ == '__main__':
 if you run a script directly, ```__name__``` gets set to ```'__main__'```, if you create a child process from a parent process, the script is imported as a module. when imported as a module, ```__name__``` gets set to the module name. this means ```if __name__ == '__main__':``` will only allow whats underneath if the script is being called directly, which is what a parent program does.  ```start()``` and ```join()``` do the same things as in threading.
 
 # output
-Single Process Section Starting
-example_arg
-81182.8826127
-Sleep Done
-81184.8832869
+Single Process Section Starting  
+example_arg  
+81182.8826127  
+Sleep Done  
+81184.8832869  
 Single Process Section Finished
 
 # multiple functions called:
@@ -248,28 +247,28 @@ if __name__ == '__main__':
 
 
 # output
-Multiple Process' Section Starting
-example_arg1
-81185.1611447
-example_arg2
-81185.1762983
-example_arg3
-81185.1911413
-example_arg4
-81185.2098349
-Sleep Done
-81187.1620957
-Sleep Done
-81187.1770295
-Sleep Done
-81187.1920171
-Sleep Done
-81187.2108108
+Multiple Process' Section Starting  
+example_arg1  
+81185.1611447  
+example_arg2  
+81185.1762983  
+example_arg3  
+81185.1911413  
+example_arg4  
+81185.2098349  
+Sleep Done  
+81187.1620957  
+Sleep Done  
+81187.1770295  
+Sleep Done  
+81187.1920171  
+Sleep Done  
+81187.2108108  
 Multiple Process' Section Finished
 
 ## final words
-if you've made it this far i really appreciate it. to reiterate from earlier, i've probably gotten something wrong and would love to be told where, please do if you notice.
+if you've made it this far i really appreciate it. to reiterate from earlier, i've probably gotten something wrong and would love to be told where, please do if you notice.   
 would also appreciate any different interaction (saying interaction because there's definitely no such thing as likes on this platform and i lack a better word), even if being told on other social media platforms. i'd like to know that someone got help from this, given how much some of you have helped me, it's a small repayment on my societable debt.
 
-see ya,
+see ya,  
 3xpl0it
