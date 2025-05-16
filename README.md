@@ -25,7 +25,7 @@ takes a string - prints the string - prints time - sleeps 2 seconds - prints sle
 note: read this againn, sounds (and is) simple but you forget one part to it and everything else gets confusing.
 
 # synchronous
-this is the one you're doing the whole time before you learn what concurrency is, it's line by line and don't move to the next line untill the current line is done. it blocks the thread its running on meaning nothing else can be done on this thread untill it's finished.
+this is the one you're doing the whole time before you learn what concurrency is, it blocks the thread its running on meaning nothing else can be done on this thread untill it's finished.
 
 ## single function call:
 ```
