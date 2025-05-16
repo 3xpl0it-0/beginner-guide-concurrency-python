@@ -4,7 +4,7 @@ this is as an educational walkthrough for me for the probably likely case where 
 as always, corrections in my code/descriptions/anything really are welcome.
 
 # important stuff to know first
-i've imported the time module, its there so when different ways are used to run the same function you can see the effect, you should pay attention to this effect, you'll learn better how each way works better. this doesn't need to be explained more right now, it's completely intuitive and you'll probably figure it out from examples before you even read the explanation for it. the learning process for each way is the same, mostly. it's going to involve showing a single function call and then many, and how things are handled.
+i've imported the time module, it's there so when different ways are used to run the same function you can see the effect, you should pay attention to this effect, you'll learn better how each way works better. this doesn't need to be explained more right now, it's completely intuitive and you'll probably figure it out from examples before you even read the explanation for it. the learning process for each way is the same, mostly. it's going to involve showing a single function call and then many, and how things are handled.
 
 there's two words you need to know too before you start reading, concurrency and coroutine. google ai says "concurrency in computing refers to the ability to handle multiple tasks or processes at the same time, either truly simultaneously or by interleaving them rapidly" and "a coroutine is a programming construct that allows a function to pause and resume its execution, enabling cooperative multitasking".
 
