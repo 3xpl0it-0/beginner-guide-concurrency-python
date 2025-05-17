@@ -6,7 +6,7 @@ as always, corrections in my code/descriptions/anything really are welcome.
 # important stuff to know first
 i've imported the time module, it's there so when different ways are used to run the same function you can see the effect, you should pay attention to this effect, you'll learn how each way works better. this doesn't need to be explained more right now, it's completely intuitive and you'll probably figure it out from examples before you even read the explanation for it. the learning process for each way is the same, mostly. it's going to involve showing a single function call and then many, and how things are handled.
 
-there's two words you need to know too before you start reading, concurrency and coroutine. google ai says "concurrency in computing refers to the ability to handle multiple tasks or processes at the same time, either truly simultaneously or by interleaving them rapidly" and "a coroutine is a programming construct that allows a function to pause and resume its execution, enabling cooperative multitasking".
+there's two words you need to know too before you start reading, concurrency and coroutine. google ai says "concurrency in computing refers to the ability to handle multiple tasks or processes at the same time, either truly simultaneously or by interleaving them rapidly" and "a coroutine is a programming construct that allows a function to pause and resume its execution, enabling cooperative multitasking". i wouldn't worry too much about understanding these completely right now, you'll "grow into" your understanding of them as you keep reading.
 
 # normal function
 this is our lab rat for synchronous, threading and multiprocessing. simple as ever and contains just enough to do what we need but no more.
