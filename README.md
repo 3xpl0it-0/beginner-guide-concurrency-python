@@ -24,6 +24,52 @@ def example_function(string):
 takes a string - prints the string - prints time - sleeps 2 seconds - prints sleep done - prints time  
 note: read this againn, sounds (and is) simple but you forget one part to it and everything else gets confusing.
 
+# synchronous
+this is the one you're doing the whole time before you learn what concurrency is, it blocks the thread its running on meaning nothing else can be done on this thread untill it's finished. you'll learn what a thread is soon, it just needs to be mentioned now to so you can use your understanding of this concept to understand future ones.
+
+## single function call:
+```
+example_function("example_arg")
+```
+nothing to say here really, as simple as it gets.
+
+## output
+Single Synchronous Section Starting  
+example_arg  
+74036.9174051  
+Sleep Done  
+74038.9184008  
+Single Synchronous Section Finished
+
+## multiple functions called:
+```
+arg_list = ['example_arg1', 'example_arg2', 'example_arg3', 'example_arg4']
+
+for i in arg_list:
+    example_function(i)
+```
+this is going to call the function with the next argument in the list each time. the next function won't be called untill the previous one is done.
+
+## output
+Multiple Synchronous Section Starting  
+example_arg1  
+74038.9197888  
+Sleep Done  
+74040.9210788  
+example_arg2  
+74040.9218514  
+Sleep Done  
+74042.9230254  
+example_arg3  
+74042.9239629  
+Sleep Done  
+74044.9251634  
+example_arg4  
+74044.9260313  
+Sleep Done  
+74046.9271687  
+Multiple Synchronous Section Finished
+
 # multiprocessing
 a process is an independant program in execution, independant meaning that it has everything it needs to run e.g. memory space. if one process is waiting on something another process can run. priority depends on operating system scheduler.
 
@@ -147,52 +193,6 @@ Sleep Done
 Multiple Threads Section Finished
 
 notice the jumbled order, this is down to close timing in wake up times and how the operating system choses which thread goes next.
-
-# synchronous
-this is the one you're doing the whole time before you learn what concurrency is, it blocks the thread its running on meaning nothing else can be done on this thread untill it's finished.
-
-## single function call:
-```
-example_function("example_arg")
-```
-nothing to say here really, as simple as it gets.
-
-## output
-Single Synchronous Section Starting  
-example_arg  
-74036.9174051  
-Sleep Done  
-74038.9184008  
-Single Synchronous Section Finished
-
-## multiple functions called:
-```
-arg_list = ['example_arg1', 'example_arg2', 'example_arg3', 'example_arg4']
-
-for i in arg_list:
-    example_function(i)
-```
-this is going to call the function with the next argument in the list each time. the next function won't be called untill the previous one is done.
-
-## output
-Multiple Synchronous Section Starting  
-example_arg1  
-74038.9197888  
-Sleep Done  
-74040.9210788  
-example_arg2  
-74040.9218514  
-Sleep Done  
-74042.9230254  
-example_arg3  
-74042.9239629  
-Sleep Done  
-74044.9251634  
-example_arg4  
-74044.9260313  
-Sleep Done  
-74046.9271687  
-Multiple Synchronous Section Finished
 
 # asynchronous
 this is next step up from synchronous, an asynchronous function doesn't block the thread it's running on. this means that when you run an async function (1) inside an async function (2) using ```await``` the async function (1) can pause itself so other things can run. this won't make sense untill you read the concurrency part in the multiple functions called subsection so hold on.
