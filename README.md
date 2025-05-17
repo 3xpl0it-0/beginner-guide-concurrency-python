@@ -247,7 +247,7 @@ asyncio.run(main())
 ```
 
 first off, notice an async function is being used, that's because you can't use await outside of an async function.
-```asyncio.gather(*efl)``` is used to group together the different cases of the function with different arguements each time and allow them to be ran concurrently, the ```*``` is used to unpack the ```efl``` list. you could await each function individually but they wouldn't be ran concurrently then.
+```asyncio.gather(*efl)``` is used to group together the different cases of the function with different arguments each time and allow them to be ran concurrently, the ```*``` is used to unpack the ```efl``` list. you could await each function individually but they wouldn't be ran concurrently then.
 
 ## output
 Multiple Asynchronous Section Starting  
@@ -272,6 +272,9 @@ Multiple Asynchronous Section Finished
 notice from the time that when the sleep line gets hit the next function starts and everything is in order because unless paused, the running coroutine doesn't give way to something else untill it's done.
 
 # final words
+an important reiteration, the system operator scheduler decides when to switch between things being ran concurrently, there are different ways it can do this and if the ordering of the output looks unusual remember this.
+
+
 if you've made it this far i really appreciate it. to reiterate from earlier, i've probably gotten something wrong and would love to be told where, please do if you notice.
 
 
