@@ -70,6 +70,8 @@ Sleep Done
 74046.9271687  
 Multiple Synchronous Section Finished
 
+notice the very orderly 2ish second waits.
+
 # multiprocessing
 a process is an independant program in execution, independant meaning that it has everything it needs to run e.g. memory space. if one process is waiting on something another process can run. priority depends on operating system scheduler.
 
@@ -133,6 +135,8 @@ Sleep Done
 Sleep Done  
 81187.2108108  
 Multiple Process' Section Finished
+
+see the difference between this and the example in the synchronous section? while a process waits another one starts.
 
 # threading
 a thread is a unique flow of execution, there can be many threads in one process and the threads can share the memory space. they're useful because if one thread is waiting for something another one can run. priority depends on operating system scheduler.
