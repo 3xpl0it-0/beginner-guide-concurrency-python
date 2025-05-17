@@ -1,5 +1,5 @@
 # intro
-this is as an educational walkthrough for me for the probably likely case where i forget how this stuff works if i spend time doing something unrelated in the future. because of this im writing this in a somewhat informal, very to the point way where i mention all the questions i'll have if things are forgotton. i figured the way it'll be written will be helpful to some of you, given it's the way i like first learning concepts instead of the hated but common occurence of chasing my tail in the deep end before figuring out where the starting point is. for this reason i've made it public.
+this is as an educational walkthrough for me for the probably likely case where i forget how this stuff works if i spend time doing something unrelated in the future. because of this i'm writing this in a somewhat informal, very to the point way where i mention all the questions i'll have if things are forgotton. i figured the way it'll be written will be helpful to some of you, given it's the way i like first learning concepts instead of the hated but common occurence of chasing my tail in the deep end before figuring out where the starting point is. for this reason i've made it public.
 
 as always, corrections in my code/descriptions/anything really are welcome.
 
