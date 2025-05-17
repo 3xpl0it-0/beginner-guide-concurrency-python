@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     print("Single Process Section Finished")
 ```
-if you run a script directly, ```__name__``` gets set to ```'__main__'```, if you create a child process from a parent process, the script is imported as a module. when imported as a module, ```__name__``` gets set to the module name. this means ```if __name__ == '__main__':``` will only allow whats underneath if the script is being called directly, which is what a parent program does. this prevents an inifinite loop. the function is put before the if statement so the child process can run the function but no more. ```start()``` creates the new child process and returns to the parent process. join() stops the parent process from continuing untill the child process ```join()``` was called on is done.
+if you run a script directly, ```__name__``` gets set to ```'__main__'```, if you create a child process from a parent process, the script is imported as a module. when imported as a module, ```__name__``` gets set to the module name. this means ```if __name__ == '__main__':``` will only allow whats underneath if the script is being called directly, which is what a parent program does. this prevents an inifinite loop. the function is put before the if statement so the child process can run the function but no more. ```start()``` creates the new child process and returns to the parent process. ```join()``` stops the parent process from continuing untill the child process ```join()``` was called on is done.
 
 ## output
 Single Process Section Starting  
