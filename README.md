@@ -199,7 +199,7 @@ Multiple Threads Section Finished
 notice the jumbled order, this is down to close timing in wake up times and how the operating system choses which thread goes next.
 
 # asynchronous
-this is next step up from synchronous, an asynchronous function doesn't block the thread it's running on. this means that when you run an async function (1) inside an async function (2) using ```await``` the async function (1) can pause itself so other things can run.
+this is next step up from synchronous, an asynchronous function doesn't block the thread it's running on. this means that when you run an async function (1) inside an async function (2) using ```await``` the async function (1) can pause itself so other things can run. this won't make sense untill you read the concurrency part in the multiple functions called subsection so hold on.
 
 ## async function
 ```
